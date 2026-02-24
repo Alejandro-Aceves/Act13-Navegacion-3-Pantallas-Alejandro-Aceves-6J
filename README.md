@@ -1,16 +1,16 @@
-# myapp
+# Actividad 13 Alejandro Aceves
 
-A new Flutter project.
+## Web
+<img width="497" height="794" alt="image" src="https://github.com/user-attachments/assets/b76501cd-bc50-4a10-afe7-5336f0774730" />
 
-## Getting Started
+<img width="495" height="799" alt="image" src="https://github.com/user-attachments/assets/e2713cde-b7f0-4f94-b899-ca2611148cf9" />
 
-This project is a starting point for a Flutter application.
+<img width="490" height="796" alt="image" src="https://github.com/user-attachments/assets/9319a617-4e77-44e1-81c5-9eafe87966a7" />
 
-A few resources to get you started if this is your first Flutter project:
+## Android
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<img width="464" height="776" alt="image" src="https://github.com/user-attachments/assets/7c5932e3-8050-458b-aace-ea8f7e7fcdc6" />
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img width="479" height="778" alt="image" src="https://github.com/user-attachments/assets/45063636-4ced-44eb-bd3a-54de8cf51e79" />
+
+<img width="480" height="782" alt="image" src="https://github.com/user-attachments/assets/2a3a1b17-98f2-48bd-97d2-faa91a0fcbed" />
