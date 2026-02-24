@@ -1,16 +1,16 @@
 # Actividad 13 Alejandro Aceves
 
 ## Web
-<img width="497" height="794" alt="image" src="https://github.com/user-attachments/assets/b76501cd-bc50-4a10-afe7-5336f0774730" />
+<img width="894" height="788" alt="image" src="https://github.com/user-attachments/assets/8d034ec9-64bf-4d07-9b1b-d1c49ab4876a" />
 
-<img width="495" height="799" alt="image" src="https://github.com/user-attachments/assets/e2713cde-b7f0-4f94-b899-ca2611148cf9" />
+<img width="897" height="792" alt="image" src="https://github.com/user-attachments/assets/0fb7b06d-aa8e-4c67-bc28-55ac2ab97385" />
 
-<img width="490" height="796" alt="image" src="https://github.com/user-attachments/assets/9319a617-4e77-44e1-81c5-9eafe87966a7" />
+<img width="448" height="792" alt="image" src="https://github.com/user-attachments/assets/ba46d84f-b7fa-4266-bd22-17a93ede20f8" />
 
 ## Android
 
-<img width="464" height="776" alt="image" src="https://github.com/user-attachments/assets/7c5932e3-8050-458b-aace-ea8f7e7fcdc6" />
+<img width="464" height="791" alt="image" src="https://github.com/user-attachments/assets/0bd87dcd-d8b7-4292-bbc7-0441dce5b0bb" />
 
-<img width="479" height="778" alt="image" src="https://github.com/user-attachments/assets/45063636-4ced-44eb-bd3a-54de8cf51e79" />
+<img width="469" height="782" alt="image" src="https://github.com/user-attachments/assets/c55548d3-7860-41e1-93d0-aff64c4d2fd8" />
 
-<img width="480" height="782" alt="image" src="https://github.com/user-attachments/assets/2a3a1b17-98f2-48bd-97d2-faa91a0fcbed" />
+<img width="469" height="796" alt="image" src="https://github.com/user-attachments/assets/5252209b-f08c-441e-9628-a16515ef02f3" />
