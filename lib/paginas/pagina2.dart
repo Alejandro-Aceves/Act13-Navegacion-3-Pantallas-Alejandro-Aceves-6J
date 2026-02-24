@@ -6,6 +6,11 @@ class Pagina2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text('Alejandro Aceves 6J'),
+        backgroundColor: const Color(0xFF1A2A3A),
+        automaticallyImplyLeading: false,
+      ),
       backgroundColor: Colors.white,
       body: SafeArea(
         child: Column(

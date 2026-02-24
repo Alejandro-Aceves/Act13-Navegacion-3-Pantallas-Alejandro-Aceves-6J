@@ -1,23 +1,20 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MaterialApp(
-    debugShowCheckedModeBanner: false,
-    home: Pagina3(),
-  ));
-}
-
 class Pagina3 extends StatelessWidget {
   const Pagina3({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text('Alejandro Aceves 6J'),
+        backgroundColor: const Color(0xFF1A2A3A),
+        automaticallyImplyLeading: false,
+      ),
       backgroundColor: Colors.white,
       body: SafeArea(
         child: Column(
           children: [
-            // El contenido principal ahora es todo un bloque deslizable
             Expanded(
               child: SingleChildScrollView(
                 padding: const EdgeInsets.symmetric(horizontal: 25.0),
@@ -25,7 +22,6 @@ class Pagina3 extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const SizedBox(height: 30),
-                    // --- TÍTULO PRINCIPAL ---
                     const Text(
                       '¿Estás Aburrido?',
                       style: TextStyle(
@@ -34,8 +30,6 @@ class Pagina3 extends StatelessWidget {
                         color: Color(0xFF1A2A3A),
                       ),
                     ),
-
-                    // --- SUBTÍTULO ---
                     const Text(
                       'Encuentra esto y más',
                       style: TextStyle(
@@ -44,13 +38,10 @@ class Pagina3 extends StatelessWidget {
                         color: Colors.black87,
                       ),
                     ),
-
                     const SizedBox(height: 30),
-
-                    // --- CUADRÍCULA DE CATEGORÍAS ---
                     GridView.count(
-                      shrinkWrap: true, // Importante: permite que el grid tome su tamaño real
-                      physics: const NeverScrollableScrollPhysics(), // El scroll lo maneja el SingleChildScrollView
+                      shrinkWrap: true,
+                      physics: const NeverScrollableScrollPhysics(),
                       crossAxisCount: 2,
                       crossAxisSpacing: 15,
                       mainAxisSpacing: 15,
@@ -61,10 +52,7 @@ class Pagina3 extends StatelessWidget {
                         _buildCategoryCard('Comida', 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=500'),
                       ],
                     ),
-
                     const SizedBox(height: 40),
-
-                    // --- TEXTO INFERIOR (Ahora está debajo de la cuadrícula) ---
                     const Text(
                       'Comprueba nuestra\nvariedad de\nactividades.',
                       style: TextStyle(
@@ -74,15 +62,12 @@ class Pagina3 extends StatelessWidget {
                         height: 1.2,
                       ),
                     ),
-                    
-                    const SizedBox(height: 30), // Espacio extra al final del scroll
+                    const SizedBox(height: 30),
                   ],
                 ),
               ),
             ),
-
-            // --- BARRA DE NAVEGACIÓN INFERIOR (Esta sí suele ir fija) ---
-            _buildBottomNav(),
+            _buildBottomNav(context),
           ],
         ),
       ),
@@ -112,7 +97,7 @@ class Pagina3 extends StatelessWidget {
     );
   }
 
-  Widget _buildBottomNav() {
+  Widget _buildBottomNav(BuildContext context) {
     return Container(
       height: 85,
       decoration: const BoxDecoration(
@@ -121,22 +106,25 @@ class Pagina3 extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          _navItem(Icons.search, 'EXPLORAR', isActive: true),
-          _navItem(Icons.near_me_outlined, 'TOURS'),
-          _navItem(Icons.chat_bubble_outline, 'RESEÑAS'),
-          _navItem(Icons.account_circle_outlined, 'CUENTA'),
+          _navItem(context, Icons.search, 'EXPLORAR', '/', isActive: true),
+          _navItem(context, Icons.near_me_outlined, 'TOURS', '/segunda'),
+          _navItem(context, Icons.chat_bubble_outline, 'RESEÑAS', '/tercera'),
+          _navItem(context, Icons.account_circle_outlined, 'CUENTA', '/'),
         ],
       ),
     );
   }
 
-  Widget _navItem(IconData icon, String label, {bool isActive = false}) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Icon(icon, color: isActive ? const Color(0xFF2E7D32) : Colors.black45, size: 30),
-        Text(label, style: TextStyle(fontSize: 11, fontWeight: FontWeight.bold, color: isActive ? const Color(0xFF2E7D32) : Colors.black45)),
-      ],
+  Widget _navItem(BuildContext context, IconData icon, String label, String route, {bool isActive = false}) {
+    return GestureDetector(
+      onTap: () => Navigator.pushNamed(context, route),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Icon(icon, color: isActive ? const Color(0xFF2E7D32) : Colors.black45, size: 30),
+          Text(label, style: TextStyle(fontSize: 11, fontWeight: FontWeight.bold, color: isActive ? const Color(0xFF2E7D32) : Colors.black45)),
+        ],
+      ),
     );
   }
 }
